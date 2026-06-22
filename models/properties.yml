@@ -1,0 +1,24 @@
+# models:
+#   - name: firsttable
+#     config:
+#       materialized: table
+#   - name: secondtable
+#     config: 
+#       materialized: view
+
+sources:
+  - name: "all_my_dbt_source_tables"
+    database: "SNOWFLAKE_SAMPLE_DATA"
+    schema: "TPCH_SF1"
+    tables: 
+      - name: "CUSTOMER"
+      - name: "SUPPLIER"
+      - name: "REGION"
+
+  - name: "all_my_dbt_source_tables_10"
+    database: "SNOWFLAKE_SAMPLE_DATA"
+    schema: "TPCH_SF1"
+    tables: 
+      - name: "CUSTOMER"
+      - name: "SUPPLIER"
+      - name: "REGION"

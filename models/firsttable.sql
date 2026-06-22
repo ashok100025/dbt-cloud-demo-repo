@@ -1,4 +1,3 @@
+{{config(materialized='view')}}
 
-{{config(materialized="view")}}
-
-select 1 as col
+select 1111 as col1, '{{ invocation_id }}' as col2
