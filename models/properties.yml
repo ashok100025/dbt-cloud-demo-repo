@@ -22,3 +22,9 @@ sources:
       - name: "CUSTOMER"
       - name: "SUPPLIER"
       - name: "REGION"
+
+  - name: "src"
+    database: "dbt"
+    schema: "dbt_schema"
+    tables:
+    - name: pii_data

@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: pii_data
+    description: "Sample PII data."
+
+    columns:
+      - name: id
+        tests:
+          - not_null
+          - unique
+      - name: gender
+        tests:
+        - accepted_values:
+            arguments: 
+              values: ['Male', 'Female']
+           

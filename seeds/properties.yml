@@ -1,0 +1,16 @@
+seeds:
+  - name: cmapping
+    description: "This is mapping file for countries"
+    config:
+      column_types:
+        id: integer
+        country: varchar
+        sales: integer
+
+  - name: cmapping2
+    description: "This is duplicate mapping file for countries"
+    config:
+      column_types:
+        id: integer
+        country: varchar
+        sales: integer
